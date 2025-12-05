@@ -1,0 +1,43 @@
+.section{
+    height: 85vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.textt{
+    position: absolute;
+    top: 200px;
+    padding: 0px 130px;
+}
+
+.textt p{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 2px;
+}
+
+.section button{
+    width: 200px;
+    background-color: #151515;
+    height: 40px;
+    color:rgb(232, 232, 232);
+    box-shadow: rgba(0, 0, 0, 0.103) 0px 2px 4px 1px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    border-radius: 3%;
+}
+
+.section button:hover{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.tittle{
+    font-weight: 800;
+}
+
+.effect{
+    position: relative;
+    margin-bottom: 80px;
+}

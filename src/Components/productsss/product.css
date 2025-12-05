@@ -1,0 +1,41 @@
+.img-box{    
+    height: 450px;
+    width: 350px;
+    overflow: hidden;
+}
+
+.card img{
+    height: 450px;
+    width: 350px;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all ease-in-out 0.2s;
+    
+}
+
+.card img:hover{
+    transform: scale(1.03);
+}
+
+.card{
+    height:auto;
+    width: 350px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.068);
+}
+
+.card h1{
+    color: rgb(0, 0, 0);
+    padding-left: 6px;
+}
+
+.card p{
+    padding: 0px;
+    padding-left: 6px;
+}

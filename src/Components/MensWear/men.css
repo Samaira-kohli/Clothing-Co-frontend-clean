@@ -1,0 +1,42 @@
+.men-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 41.2rem;
+    overflow: hidden;
+}
+
+.men-banner img{
+    width: 82%;
+    height: 660px;
+    object-fit: cover;
+}
+
+.dicover-button:hover{
+  background-color: #f0f0f0;
+  color: black;
+  border: none;
+}
+
+.dicover-button{
+  position: relative;
+  top: -130px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(245, 245, 245);
+  cursor: pointer;
+  transition: 0.3s ease;
+  z-index: 20;
+  padding: 15px 35px;
+  color: rgb(231, 231, 231);
+  border: 1px solid rgb(240, 240, 240);
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+  font-size: 1rem;
+}
+
+.dicover-button:hover{
+  background-color: #f6f5ea;
+  color: black;
+  border: none;
+}
