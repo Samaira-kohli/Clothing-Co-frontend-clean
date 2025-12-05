@@ -22,4 +22,4 @@ function MyVid() {
     )
 }
 
-export default MyVid
+export default MyVid;
