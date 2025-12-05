@@ -1,7 +1,7 @@
 import { use, useState } from 'react'
 import './App.css'
 // import Layout from './components/Layout'
-import Layout from './components/Layout.jsx';
+import Layout from './Components/Layout';
 import Shop from './pages/Shop'
 import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom'
 import ShopCategory from './pages/ShopCategory'
