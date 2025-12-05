@@ -1,5 +1,4 @@
 import React from 'react'
-import myvid from '../assets/Frontend_Assets/video.mp4';
 import './vdo.css'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
@@ -15,7 +14,7 @@ function MyVid() {
             <h1 className='summer'>Summer Collection</h1>
             <div className="hover-effect">
                 <Link to={'/women'}><button className='dicoverMore-button' onClick={()=>window.scrollTo(0,0)}>Discover More</button></Link>
-                <video src={myvid} autoPlay loop muted playsInline></video>
+                <video src="/video.mp4" autoPlay loop muted playsInline></video>
             </div>
             
         </motion.div>
