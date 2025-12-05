@@ -1,5 +1,5 @@
 import React from 'react'
-import myvid from '../assets/Frontend_Assets/vdo2.mp4'
+import myvid from '../assets/Frontend_Assets/vdo2.mp4';
 import './vdo.css'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
