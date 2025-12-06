@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Header from './Header/Header';
 import { Outlet } from 'react-router-dom';
 import Footer from './footerr/Footer';
@@ -7,6 +7,13 @@ import Cart from '../pages/Cart';
 
 
 function Layout() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
   const {setIsCartOpen , isCartOpen} = useContext(ShopContext);
   return (
     <>
