@@ -13,9 +13,10 @@ function MyVid() {
                     muted
                     loop
                     playsInline
-                    preload="none"
+                    preload="metadata"
+                    className="hero-video"
                 >
-                    <source src="/videos/video.mp4" type="video/mp4" />
+                    <source src="\videos\video.mp4" type="video/mp4" />
                 </video>
             </div>
         </div>
