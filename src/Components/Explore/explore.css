@@ -4,20 +4,21 @@
 }
 
 .explore{
-    /* padding: 100px; */
-    width: 100vw;
-    text-align: center;
     font-size: 35px;
     font-weight: bold;
 }
 
 .para{
-    padding: 0 450px;
-    text-align: center;
+    width: 640px;
     color: rgba(0, 0, 0, 0.758);
+    text-align: center;
 }
 
 .aboutus-banner{
     /* background-color: chartreuse; */
-    padding: 80px 0px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
 }

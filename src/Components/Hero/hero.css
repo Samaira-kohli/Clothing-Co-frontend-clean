@@ -2,6 +2,7 @@
     height: 85vh;
     width: 100%;
     object-fit: cover;
+    margin-bottom: 70px;
 }
 
 .textt{
@@ -35,9 +36,4 @@
 
 .tittle{
     font-weight: 800;
-}
-
-.effect{
-    position: relative;
-    margin-bottom: 80px;
 }

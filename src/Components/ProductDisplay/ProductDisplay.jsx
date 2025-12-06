@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./ProductDisplay.css";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import sizeChart from '../../assets/Frontend_Assets/SizeChart_menn.jpg';
@@ -36,6 +36,10 @@ function ProductDisplay({ product }) {
       setImgIndex(product.image.length-1);
     }
   }
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
 
 
   return (

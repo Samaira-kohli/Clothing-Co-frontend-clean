@@ -14,7 +14,7 @@ function Header(props) {
         {/* Logo */}
         <div className="nav-logo">
           {/* <img src={logo} alt="Clothing Logo" /> */}
-          <p>Clothing Co.</p>
+          <Link to='/' onClick={window.scrollTo({top:0, behavior:"smooth"}) }><p>Clothing Co.</p></Link>
         </div>
 
         {/* Menu */}
@@ -22,7 +22,6 @@ function Header(props) {
           <li><NavLink to="/" className={({isActive})=>(isActive?'active':'text-[#696969]')}>Shop</NavLink></li>
           <li><NavLink to="/men" className={({isActive})=>(isActive?'active':'text-[#696969]')}>Men</NavLink></li>
           <li><NavLink to="/women" className={({isActive})=>(isActive?'active':'text-[#696969]')}>Women</NavLink></li>
-          {/* <li><NavLink to="/kids" className={({isActive})=>(isActive?'active':'text-[#4d4949]')}>Kids</NavLink></li> */}
         </ul>
 
         {/* Login and Cart */}

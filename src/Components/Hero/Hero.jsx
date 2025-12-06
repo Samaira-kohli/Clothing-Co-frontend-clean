@@ -18,7 +18,7 @@ const Hero = () => {
   { img: hero3, heading: 'Wear Confidence, Every Day', desc: 'From soft neutrals to trend-forward silhouettes — express your style, your way.' }]
   return (
     <>
-      <motion.div initial={{ opacity: 0.3, y: -60 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }} viewport={{ once: true }} className="effect">
+
         <Swiper modules={[Navigation, Pagination, Autoplay]} navigation pagination={{ clickable: true }} autoplay={{ delay: 2500, disableOnInteraction: false, pauseOnMouseEnter: true }} loop={true} className="section">
           {images.map((item, index) => (
             <SwiperSlide key={index}>
@@ -31,7 +31,6 @@ const Hero = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </motion.div>
 
     </>
   );
