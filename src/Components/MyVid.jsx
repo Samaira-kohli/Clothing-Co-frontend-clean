@@ -16,7 +16,7 @@ function MyVid() {
                     preload="metadata"
                     className="hero-video"
                 >
-                    <source src="\videos\girl.mp4" type="video/mp4" />
+                    <source src="/videos/girl.mp4" type="video/mp4" />
                 </video>
             </div>
         </div>
