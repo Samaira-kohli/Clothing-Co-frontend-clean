@@ -9,13 +9,9 @@
     top: 28%;
     padding: 0px 7%;
     max-width: 85%;
-}
-
-.textt p{
-    padding-top: 1.5%;
-    padding-bottom: 2.5%;
-    padding-left: 2px;
-    font-size: clamp(0.7rem, 2vw, 1.2rem); 
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
 }
 
 .section button{
@@ -27,7 +23,8 @@
     transition: all 0.1s ease-in-out;
     border-radius: 3%;
     padding: 0.6rem;
-    font-size: clamp(0.6rem, 1.5vw, 1rem); 
+    font-size: clamp(0.7rem, 1.5vw, 1rem); 
+    margin-top: 1rem;
 
 }
 
@@ -37,35 +34,32 @@
     cursor: pointer;
 }
 
-.tittle{
-    font-weight: 800;
-    /* auto scales text */
-    font-size: clamp(1.6rem, 4vw, 4rem); 
 
-}
-
-
-@media (max-width: 750px) {
+@media (max-width: 600px) {
   .textt {
-    top: 23%;
-    padding: 0 7%;
-    width: 100%;
+    top: 11%;
+    max-width: 100%;
+    text-align: center;
   }
 
    .textt p{
-    padding: 4% 0 4%;
+    text-align: center;
+    padding: 0;
   }
 
   .section button {
-    width: 33%;
+    width: 40%;
     text-align: center;
     padding: 8px;
     font-size: 0.6rem;
+    margin-top: 0.5rem;
   }
 
   .section img{
-    min-height: 350px;
+    min-height: 550px;
     object-fit: cover;
+    flex-direction: column;
+    background-image: url('https://images.pexels.com/photos/33428983/pexels-photo-33428983.jpeg');
   }
 
 }

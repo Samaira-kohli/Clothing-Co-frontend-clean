@@ -1,24 +1,25 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-.explore{
-    font-size: 35px;
-    font-weight: bold;
-}
 
 .para{
-    width: 640px;
+    width: 40%;
     color: rgba(0, 0, 0, 0.758);
     text-align: center;
 }
 
 .aboutus-banner{
-    /* background-color: chartreuse; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: auto;
+    padding: 9rem 0;
+}
+
+@media (max-width: 600px){
+    .para{
+        width: 70%;
+    }
+
+    .aboutus-banner{
+        padding: 2.5rem 0 3rem;
+    }
 }

@@ -5,7 +5,7 @@ function Popular() {
     return (
         <>
             <div className="popular">
-                <h2 className='heading'>Popular in Women</h2>
+                <h1 className='heading'>Popular in Women</h1>
                 <div className='boxes'>
                     {data_products.map((item, i) => {
                         return <Item key={i} id={item.id} name={item.name} image={item.image} />

@@ -1,4 +1,3 @@
-import React from 'react'
 import men1 from '../../assets/Frontend_Assets/men1.jpg'
 import './men.css'
 import { Link } from 'react-router-dom'

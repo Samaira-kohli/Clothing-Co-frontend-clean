@@ -1,15 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
 .summer{
-    font-weight: bold;
-    font-size: 35px;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 2rem;
 }
 
 .vid-section{
@@ -18,7 +9,7 @@
 }
 
 video{
-  width: 82%;
+  width: 85%;
   position: relative;
   top: -58px;
   transition: all ease-in-out 0.5s;
@@ -62,4 +53,10 @@ body{
   background-color: #f6f5ea;
   color: black;
   border: none;
+}
+
+@media (max-width: 600px) {
+  .summer{
+    padding: 0.2rem;
+  }
 }
