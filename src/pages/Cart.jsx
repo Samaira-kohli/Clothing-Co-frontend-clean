@@ -35,7 +35,7 @@ const Cart = ({ isOpen, closeCart }) => {
     <div className={`cart-sidebar ${isOpen ? "open" : ""}`}>
       {/* Header */}
       <div className="cart-top">
-        <h2>CART</h2>
+        <h1>CART</h1>
         <button className="close-btn" onClick={closeCart}>×</button>
       </div>
 

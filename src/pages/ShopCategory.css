@@ -17,6 +17,8 @@
     display: flex;
     gap: 10px;
     padding-top: 26px;
+    flex-wrap: wrap;
+    justify-content: center;
     /* background-color: blue; */
 }
 
@@ -24,11 +26,10 @@
     border: 1px solid rgb(42, 42, 42);
     padding: 3px 8px;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: clamp(0.6rem, 2vw, 1rem);
     background-color: #F6F5F4;
     color: rgb(42, 42, 42);
-    font-weight: light;
-    /* transition: all ease-in-out 0.1s; */
+
 }
 
 .options .opt:hover{
@@ -49,24 +50,30 @@
 
 .filterButton{
     display: flex;
-    color: rgba(0, 0, 0, 0.623);
+    color: rgb(0, 0, 0);
     cursor: pointer;
     align-items: center;
-    font-size: 15px;
+    font-size: clamp(0.7rem, 2vw, 0.9rem); 
+    font-weight: normal;
 }
 
 .filters{
     display: flex;
-    gap: 20px;
-    width: 94%;
-    padding-bottom: 10px;
+    gap: 1%;
+    width: 86%;
+    /* padding-bottom: 1%; */
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    height: clamp(1.3rem, 2vw, 2.2rem);
+    /* background-color: blueviolet; */
 }
 
 .availability{
     position: absolute;
     background-color:  #f6f4f5;
     width: 180px;
-    top: 30px;
+    top: 100%;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -101,10 +108,6 @@
 
 .filterWrapper{
     position: relative;
-}
-
-.active{
-    color: rgb(37, 37, 37);
 }
 
 .priceLabel{
@@ -142,17 +145,12 @@
     left: -12.5px;
 }
 
-.price h1{
-    font-size: 14px;
-    font-weight: light;
-    color: rgba(0, 0, 0, 0.566);
-}
-
 .totalProducts{
-    position: relative;
-    right: -1000px;
+    position: absolute;
+    /* right: -70.5%; */
+    right: 7%;
     color: rgb(101, 101, 101);
-    font-size: 15px;
+    font-size: clamp(0.7rem, 2vw, 0.9rem); 
 }
 
 .inputSize p{
@@ -164,14 +162,20 @@
     gap: 5px;
 }
 
-.size{
-    font-size: 14px;
-}
-
 .sizeHr{
     color: rgba(199, 199, 199, 0.735);
     width: 117%;
     position: relative;
     margin: 5px 0px 10px;
     left: -12.5px;
+}
+
+.filter-container button{
+    font-size: clamp(0.7rem, 2vw, 0.9rem); 
+    color: rgb(101, 101, 101);
+    font-weight: light;
+}
+
+.filterButton .active{
+    color: rgb(255, 16, 16);
 }

@@ -77,7 +77,7 @@ function ShopCategory(props) {
             <button className={`filterButton ${showPrice ? "active" : ""}`}
               onClick={() => (setShowPrice(!showPrice))}>Price<ChevronDown size={18} /></button>
             <div className={`availability price ${showPrice ? 'show-availability' : ''}`}>
-              <h1>The highest price is ₹ {highestPrice}</h1>
+              <p>The highest price is ₹ {highestPrice}</p>
               <hr className="priceHr" />
               <div className="inputPrice">
                 <p>₹<input type="number" placeholder="From" onChange={(e) => { setPriceFrom(e.target.value) }} className="priceLabel" /></p>
@@ -91,7 +91,7 @@ function ShopCategory(props) {
             <button className={`filterButton ${showSize ? "active" : ""}`}
               onClick={() => (setShowSize(!showSize))}>Size<ChevronDown size={18} /></button>
             <div className={`availability size ${showSize ? 'show-availability' : ''}`}>
-              <h1>{size.length} selected</h1>
+              <p>{size.length} selected</p>
               <hr className="sizeHr" />
               <div className="inputSize">
                 {sizeList.map((item,index)=>(<p key={index}><input type="checkbox" value={item} 
@@ -100,7 +100,7 @@ function ShopCategory(props) {
             </div>
           </div>
 
-          <h1 className="totalProducts">{totalProducts} products</h1>
+          <p className="totalProducts">{totalProducts} products</p>
         </div>
       </div>
 

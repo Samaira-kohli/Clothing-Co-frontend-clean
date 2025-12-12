@@ -5,13 +5,13 @@
     box-sizing: border-box;
 }
 
-.discount{
+/* .discount{
     background-color: #CCC2B5;
     text-align: center;
     padding: 5px;
     font-size: 15px;
     color: #3f3e3e;
-}
+} */
 
 .navbar{ 
     display: flex; 
@@ -33,9 +33,9 @@
 }
 
 .nav-logo p {
-    font-size: 20px;
-    font-weight: 700;
     color: #333;
+    font-size: clamp(0.7rem, 2vw, 1rem);
+    font-weight: bold;
 }
 
 .nav-logo img{
@@ -48,13 +48,15 @@
     gap: 26px;
     list-style: none;
     align-items: center;
+
+
 }
 
 .nav-menu a {
     cursor: pointer;
-    font-size: 14px;
     transition: color 0.3s ease;
-    letter-spacing: 0.5px3
+    letter-spacing: 0.5px;
+    font-size: clamp(0.7rem, 2vw, 0.85rem);
 }
 
 
@@ -75,11 +77,11 @@
     padding-top: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: clamp(0.9rem, 2vw, 1.5rem);
 }
 
 .nav-login-cart img {
-    width: 25px;
-    height: 25px;
+    width: clamp(1.3rem, 2vw, 1.5rem);
     cursor: pointer;
 }
 
@@ -91,17 +93,11 @@
         gap: 10px;
     }
 
-    .nav-menu li {
-        font-size: 13px;
-    }
 
     .navbar {
         padding: 1px;
     }
 
-    .nav-logo p {
-        font-size: 15px;
-    }
 }
 
 .cart-counter {
@@ -119,45 +115,6 @@
     margin-top: -17px;
 }
 
-.container {
-  position: relative; /* Makes the dropdown positioned relative to the "Men" item */
-}
-
-.dropdown-menu {
-  position: absolute;
-  top: 100%; /* positions directly below the Men link */
-  left: -15px;
-  background-color: #f6f4f5;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
-  transform: translateY(10px);
-  z-index: 999;
-  min-width: 180px;
-  border-radius: 4px;
-  padding: 10px 0;
-  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.187);
-
-}
-
-.dropdown-menu a {
-  display: block;
-  padding: 10px 13px;
-  color: #161616c7;
-  font-size: 13px;
-}
-
-.dropdown-menu a:hover {
-  background-color: #eaeaead0;
-  color: #161616;
-}
-
-/* Show dropdown on hover */
-.container:hover .dropdown-menu{
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
 
 .active{
     /* text-decoration: underline rgb(44, 44, 44); */

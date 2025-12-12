@@ -1,16 +1,17 @@
 .img-box{    
-    height: 450px;
-    width: 350px;
+    /* height: 450px; */
+    /* width: 350px; */
     overflow: hidden;
+    object-fit: contain;
 }
 
 .card img{
-    height: 450px;
-    width: 350px;
+    /* height: 450px;
+    width: 350px; */
+    height: clamp(12rem, 50vw, 31rem);
     object-fit: cover;
     transform: scale(1);
     transition: all ease-in-out 0.2s;
-    
 }
 
 .card img:hover{
@@ -19,7 +20,9 @@
 
 .card{
     height:auto;
-    width: 350px;
+    /* height: clamp(20rem, 50vw, 31rem); */
+    /* width: 350px; */
+    width: clamp(5rem, 40vw, 20rem);
     font-size: 15px;
     margin-bottom: 10px;
     cursor: pointer;
@@ -30,12 +33,8 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.068);
 }
 
-.card h1{
-    color: rgb(0, 0, 0);
-    padding-left: 6px;
-}
-
 .card p{
-    padding: 0px;
+    padding-top: 2px;
     padding-left: 6px;
+    font-size: clamp(0.6rem, 2vw, 0.8rem);
 }

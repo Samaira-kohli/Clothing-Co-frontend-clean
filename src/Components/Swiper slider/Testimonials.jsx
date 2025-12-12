@@ -66,7 +66,7 @@ function Testimonials() {
 
     return (
         <div className="testimonial-section">
-            <h2 className="title">What Our Customers Say</h2>
+            <h1 className="title">What Our Customers Say</h1>
             <Swiper
                 navigation
                 autoplay={{ delay: 4000, disableOnInteraction: true }}
@@ -89,7 +89,7 @@ function Testimonials() {
                 {testimonials.map((obj, index) => (
                     <SwiperSlide key={index}>
                         <div className="testimonial-card">
-                            <h3>{obj.name}</h3>
+                            <h1>{obj.name}</h1>
                             <p className="text">{obj.text}</p>
                         </div>
                     </SwiperSlide>

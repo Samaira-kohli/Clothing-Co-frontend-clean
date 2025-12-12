@@ -8,7 +8,7 @@ function Product(props) {
         <div className="img-box">
           <Link to={`/product/${props.id}`} target="_self"><img src={props.image} alt={props.name} loading="lazy"/></Link>
         </div>
-        <h1>{props.name}</h1>
+        <p>{props.name}</p>
         <p>₹{props.price}</p>
     </div>
   )

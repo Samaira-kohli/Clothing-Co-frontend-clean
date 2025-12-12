@@ -8,12 +8,11 @@ import { ShopContext } from '../../Components/Context/ShopContext'
 function Header(props) {
   const {quantity}= useContext(ShopContext)
   return (
-    <>
+    <header>
       {/* <div className="discount">Use code CHIC15 for an exclusive extra 15% off!</div> */}
       <nav className="navbar">
         {/* Logo */}
         <div className="nav-logo">
-          {/* <img src={logo} alt="Clothing Logo" /> */}
           <Link to='/' onClick={window.scrollTo({top:0, behavior:"smooth"}) }><p>Clothing Co.</p></Link>
         </div>
 
@@ -26,12 +25,12 @@ function Header(props) {
 
         {/* Login and Cart */}
         <div className="nav-login-cart">
-          <Link to="/Login"><button aria-label='Login'><User /></button></Link>
+          <Link to="/Login"><button aria-label='Login'><User/></button></Link>
           <img src={cart} alt="Cart Icon" onClick={props.openCart}/>
           <div className="cart-counter">{quantity}</div>
         </div>
       </nav>
-    </>
+    </header>
   );
 }
 

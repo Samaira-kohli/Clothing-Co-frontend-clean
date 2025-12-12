@@ -131,7 +131,7 @@
   position: fixed;
   top: 0;
   right: -420px;     /* hidden by default */
-  width: 400px;
+  width: clamp(15rem, 30vw, 30rem);
   height: 100vh;
   background: #fff;
   box-shadow: -4px 0 10px rgba(0,0,0,0.1);
@@ -155,7 +155,11 @@
   padding-bottom: 10px;
   border-bottom: 1px solid #e8e8e8;
   letter-spacing: 3px;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
+}
+
+.cart-top h1{
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
 }
 
 .close-btn {
@@ -220,6 +224,5 @@
 .emptyCart{
   position: relative;
   /* top: -595px; */
-  right: 10px;
-  font-size: 0.9rem;
+  /* right: 10px; */
 }
